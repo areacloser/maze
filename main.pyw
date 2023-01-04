@@ -70,7 +70,7 @@ def main():
     mp[pos[0]][pos[1]] = -1
     
     win = Tk()
-    win.title("Maze -- By lanlan2_")
+    win.title("Maze V0.0.3 -- By lanlan2_")
     win.resizable(0, 0)
 
     can = Canvas(win,
@@ -120,7 +120,7 @@ def main():
         if pos == [HEIGHT-1, WIDTH-1]:
             win.unbind("<KeyPress>")
         
-    #win.bind("<KeyPress>", move)
+    #win.bind("<KeyPress>", move) -> uncomment to let the player move!
     win.mainloop()
 
 if __name__ == "__main__":
